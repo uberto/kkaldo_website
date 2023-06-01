@@ -45,12 +45,11 @@ p {
 }
 
 header {
-    background: url('itoshima.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-color: #14bfff;
+    background: #14bfff url('itoshima.jpg') no-repeat fixed center center;
     text-align: center;
     padding: 20px;
     height: 65vh;
