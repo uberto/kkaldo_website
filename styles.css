@@ -4,7 +4,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    padding-top: 46px;
+    padding-top: 40px;
 }
 
 
@@ -13,7 +13,7 @@ body {
     width: 80%;
     max-width: 960px;
     margin: 0 auto;
-    padding: 0px;
+    padding: 0;
 }
 
 h1, h2 {
@@ -28,10 +28,12 @@ h1, h2 {
 h2 {
     font-size: 3rem;
 }
+
 h3 {
     font-size: 2rem;
     font-weight: 300;
 }
+
 h4 {
     font-size: 1.5rem;
     font-weight: 200;
@@ -49,18 +51,18 @@ header {
     -moz-background-size: 100% auto;
     -o-background-size: 100% auto;
     background-size: 100% auto;
-    background: #14bfff url('itoshima.jpg') no-repeat fixed center center;
+    background-image: url('itoshima.jpg');
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     text-align: center;
     padding: 20px;
-    height: 65vh;
+    height: 60vh;
 }
 
 header h1, header h2 {
     color: white;
-}
-
-header img {
-    height: 100px;
 }
 
 #about, #services, #mission, #contact, #usecases {
@@ -91,15 +93,17 @@ header img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;  /* allows the items to wrap as needed */
-    margin-bottom: 20px;  /* space between rows */
+    flex-wrap: wrap; /* allows the items to wrap as needed */
+    margin-bottom: 20px; /* space between rows */
 }
+
 .uc-row.reverse {
-    flex-direction: row-reverse;  /* reverse the order of items in the row */
+    flex-direction: row-reverse; /* reverse the order of items in the row */
 }
+
 .uc-image {
-    flex: 50%;  /* take up half the row width */
-    text-align: center;  /* center the image if it's smaller than the div */
+    flex: 50%; /* take up half the row width */
+    text-align: center; /* center the image if it's smaller than the div */
 }
 
 .uc-image img {
@@ -108,7 +112,7 @@ header img {
 }
 
 .uc-text {
-    flex: 50%;  /* take up half the row width */
+    flex: 50%; /* take up half the row width */
     text-align: left;
     font-size: 1.2rem;
     font-weight: 150;
